@@ -285,7 +285,7 @@ class User(db.Model, SerializerMixin):
     def password_hash(self):
         return self._password_hash
 
-    @password.setter
+    @password_hash.setter
     def password_hash(self, password):
         # utf-8 encoding and decoding is required in python 3
         password_hash = bcrypt.generate_password_hash(
