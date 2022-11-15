@@ -4,7 +4,7 @@
 
 - Explain why it's a bad idea to store passwords in plaintext.
 - Write code to store and verify hashed, salted passwords.
-- Use Rails' `has_secure_password` to store and authenticate user login
+- Use SQLAlchemy and Bcrypt to store and authenticate user login
   credentials securely.
 
 ***
