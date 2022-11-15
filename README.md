@@ -314,7 +314,7 @@ match, you're in. If they don't, no dice.
 
 When dealing with users' passwords, it's important for security that we never
 store passwords in our database directly in plain text. Instead, we can use a
-trusted library like BCrypt to help keep our users' passwords safe.
+trusted library like Bcrypt to help keep our users' passwords safe.
 
 ***
 
