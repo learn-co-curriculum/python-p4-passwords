@@ -324,7 +324,7 @@ Before you move on, make sure you can answer the following questions:
 
 <details>
   <summary>
-    <em>1. What setup steps do you need to complete to use BCrypt in your Rails
+    <em>1. What setup steps do you need to complete to use Bcrypt in your Flask
         app?</em>
   </summary>
 
@@ -335,7 +335,7 @@ Before you move on, make sure you can answer the following questions:
 
 <details>
   <summary>
-    <em>2. What two things does BCrypt do to secure passwords?</em>
+    <em>2. What two things does Bcrypt do to secure passwords?</em>
   </summary>
 
   <p>It salts and hashes them before they are stored.</p>
