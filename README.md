@@ -289,7 +289,7 @@ class User(db.Model, SerializerMixin):
     def password_hash(self, password):
         # utf-8 encoding and decoding is required in python 3
         password_hash = bcrypt.generate_password_hash(
-            password.encode('utf-8'), bcrypt.gensalt())
+            password.encode('utf-8'))
         self._password_hash = password_hash.decode('utf-8')
 
     def authenticate(self, password):
@@ -300,7 +300,7 @@ class User(db.Model, SerializerMixin):
 
 Our `users.password_hash` column really stores two values: the salt and the
 actual return value of Bcrypt. We just concatenate them together in the column
-and use our knowledge of the length of salts — `gensalt()` always produces
+and use our knowledge of the length of salts — Bcrypt always produces
 29-character strings — to separate them.
 
 After we've loaded the User, we find the salt which we previously stored in
